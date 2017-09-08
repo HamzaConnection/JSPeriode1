@@ -1,0 +1,20 @@
+<!DOCTYPE hltm>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title> JavaScript Hoisting</title>
+    </head>
+    <body>
+        <script>
+            var myvar = 'my value';
+
+            (function(){
+                alert(myvar);
+            //var myvar = 'local value';
+            alert(myvar);
+        })();
+
+            </script>
+            
+    </body>
+</html>

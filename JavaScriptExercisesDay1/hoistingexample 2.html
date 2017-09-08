@@ -1,0 +1,32 @@
+<!DOCTYPE hltm>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title> JavaScript Hoisting</title>
+    </head>
+    <body>
+        <script>
+            var a = true;
+            function change()
+            {
+                if(!a) { // a == false
+                    var a = 2;
+                }
+                alert(a);
+            }
+
+            // this is how js sees it
+
+            var a = true; // a = true.
+            function change(){
+                var a;
+                if(!a){
+                     a = 2;
+                }
+                alert(a);
+            }
+
+            </script>
+            
+    </body>
+</html>
