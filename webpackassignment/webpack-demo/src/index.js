@@ -31,7 +31,7 @@ function makeTable(persons) {
     let personRow = persons.map(function (person) {
         var values = "";
         for (var i = 0; i < propertyNames.length; i++) { 
-            console.log(i);
+            console.log(propertyNames)
             values+=`<td> ${person[Object.keys(person)[i]] } </td>`;
         }
         return `<tr>
@@ -54,4 +54,7 @@ const table = makeTable(persons);
 document.getElementById('my-table').innerHTML = table;
 
 // use filter function for assingment 3g
+
+// https://lodash.com/docs#keys   (use it to iterate over the keys in an array)
+// https://lodash.com/docs#startCase  (Use to change the casing of a property firstName -> First Name)
 

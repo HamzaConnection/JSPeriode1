@@ -3,7 +3,8 @@
 //   this.nums = numbs;
 //   this.fives = [];
 //   this.nums.forEach(function (v) {
-//     if (v % 5 === 0) { // this example does not work because the this inside the if statement belongs to the if statement, not the function itself. therefore this.fives is undefined inside the if statement
+//     if (v % 5 === 0) { // this example does not work because the this inside the if statement belongs to the if statement, not the function itself. 
+//      therefore this.fives is undefined inside the if statement
 //     //   this.fives.push(v);
 //       self.fives.push(v);
 
