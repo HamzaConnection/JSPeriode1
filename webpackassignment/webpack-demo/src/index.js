@@ -1,7 +1,8 @@
 import _ from "lodash";
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.css'
-
+// npm install --save-dev babel-loader babel-core babel-preset-env
+// To get babel to transpile the code see webpack.config.js
 
 function Person(fn, ln, s) {
     this.firstName = fn;
