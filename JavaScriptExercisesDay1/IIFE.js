@@ -1,8 +1,15 @@
 // Immediately Invoked Function Expressions
-// IIFE is used when you only need the function once
-// varibles within the funcions won't poluate the rest since it's only initialist once
+
 
 var iife = function()
 {
     console.log("Hello World!")
 }();
+
+//Protect against polluting the global environment
+(function(){
+    var txt = "Hello World";
+    console.log(txt);  //This is ok
+  })();
+  
+  console.log(txt);  //Throws an error

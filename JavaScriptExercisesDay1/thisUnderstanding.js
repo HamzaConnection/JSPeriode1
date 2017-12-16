@@ -8,7 +8,7 @@ var myCar = {
     }
 };
 
-myCar.print();
+//myCar.print();
 
 // understanding .call
 
@@ -19,7 +19,7 @@ var addToThis = function(a)
     return this.num + a;
 }
 
-+ addToThis.call(obj,3); 
+addToThis.call(obj,3); 
 // notice .call attaches this to the obj and the other 
 // argumenent is simply a that the function requires
 // to see the result just console.log 
@@ -32,5 +32,13 @@ addToThis.apply(obj,arr);
 
 var bound = addToThis.bind(obj,arr); // bind return a function
 //you can now call the function with bound(arguments here)
+
+
+//In JavaScript this always refers to the “owner” of the function we're executing, 
+//or rather, to the object that a function is a method of.
+
+//In Java, this refers to the current instance object on which the method is executed.
+
+
 
 

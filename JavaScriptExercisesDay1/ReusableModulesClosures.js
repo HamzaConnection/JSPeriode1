@@ -2,9 +2,22 @@
 /*
 A closure is a special kind of object that combines two things:
 A function
-The environment in which that function was created. The environment consists of any local variables that were in-scope at the time that the closure was created
+The environment in which that function was created. The environment consists of any local variables 
+that were in-scope at the time that the closure was created
 
 */
+
+function init() {
+    var name = "Mozilla"; // Local variable
+    function displayName() { // Inner function --> a closure
+      console.log(name); // Uses variable from the parent function
+    }
+    displayName();
+  }
+  init();
+
+
+// modules_closure.html
 var makeCounter = function() {
     var privateCounter = 0
     function changeBy(val) {
@@ -46,7 +59,9 @@ var makePerson = function(newName, newAge) {
 var person1 = makePerson('nicklas', 20)
 var person2 = makePerson('julie',24)
 
+/*
 console.log(person1.getInfo())
 console.log(person2.getInfo())
 person1.setAge(21)
 console.log(person1.getInfo())
+*/

@@ -28,7 +28,7 @@ function Numbers(numbs) {//es6
 
 
     var numbers = new Numbers([1, 3, 5, 10, 14, 20, 33, 50]);
-    //console.log(numbers.fives);
+    console.log(numbers.fives);
 
 
     var counter = {
@@ -37,9 +37,9 @@ function Numbers(numbs) {//es6
       }
     var func = counter.inc; //Store "reference" to inc
     func();
-    console.log(counter.count); //Still zero
+    //console.log(counter.count); //Still zero
     counter.inc(); 
-    console.log(counter.count); //Still zero
+    //console.log(counter.count); //Still zero
 
 
 /*
