@@ -1,0 +1,18 @@
+{
+  "name": "useStrict_ESLint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "useStrict_ESLint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

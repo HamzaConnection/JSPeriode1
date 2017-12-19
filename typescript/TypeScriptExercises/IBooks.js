@@ -1,6 +1,6 @@
 function speak(book) {
-    console.log("title: " + book.title + "\n" + "author: " + book.author +
-    "\n" + "published: " + book.published + "\n" + "pages: " + book.pages + ".");
+    console.log("title: " + book.title + "/n " + "author: " + book.author +
+        "/n " + "published: " + book.published + "/n " + "pages: " + book.pages + ".");
 }
 var d = new Date();
 // We define an object that has all of the properties the Food interface expects.

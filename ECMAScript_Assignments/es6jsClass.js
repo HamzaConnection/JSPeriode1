@@ -81,9 +81,9 @@ class Cylinder extends Circle {
 }
 
 let cyl = new Cylinder("red", 2, 6)
-console.log(cyl.toString())
+//console.log(cyl.toString())
 cyl.setColor("yellow")
 cyl.setHeight(20)
 cyl.setRadius(3)
 
-console.log(cyl.toString())
+//console.log(cyl.toString())
